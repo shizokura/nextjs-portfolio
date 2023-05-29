@@ -1,9 +1,9 @@
 import aboutStyle from './About.module.scss';
+import SectionTitle from '../SectionTitle';
 
 const About = () => (
   <div className={ `${ aboutStyle.container } container mx-auto` }>
-    <div className={ aboutStyle.mini }>About Me</div>
-      <h2 className={ aboutStyle.title }>Know Me More</h2>
+      <SectionTitle main="Know Me More" sub="About Me" />
       <div className={ aboutStyle.intro }>
         <div className={ aboutStyle.text }>
           <div className={ aboutStyle.text__title }>Hi, I'm <strong>Edward Guevarra</strong></div>
