@@ -14,6 +14,24 @@ const About = () => (
           <div className={ aboutStyle.years__text }>Years of <strong>Experience</strong></div>
         </div>
       </div>
+      <div className={ aboutStyle.info }>
+        <div className={ aboutStyle.info__item }>
+          <div className={ aboutStyle.label }>Name:</div>
+          <div className={ aboutStyle.value }>Edward Guevarra</div>
+        </div>
+        <div className={ aboutStyle.info__item }>
+          <div className={ aboutStyle.label }>Email:</div>
+          <div className={ aboutStyle.value }>edwardguevarra2003@gmail.com</div>
+        </div>
+        <div className={ aboutStyle.info__item }>
+          <div className={ aboutStyle.label }>Date of Birth:</div>
+          <div className={ aboutStyle.value }>25 August, 1999</div>
+        </div>
+        <div className={ aboutStyle.info__item }>
+          <div className={ aboutStyle.label }>From:</div>
+          <div className={ aboutStyle.value }>Philippines</div>
+        </div>
+      </div>
   </div>
 );
 

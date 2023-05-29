@@ -58,3 +58,19 @@
         }
     }
 }
+
+.info {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    &__item {
+        .label {
+            color: #6c757d;
+            font-weight: 500;
+        }
+        .value {
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+    }
+}
