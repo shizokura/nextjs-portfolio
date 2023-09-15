@@ -6,21 +6,15 @@ import { SiMyanimelist } from 'react-icons/si';
 
 const ContactPage = () => {
   return (
-    <div className="w-[1024px] m-auto mt-28">
+    <div className="lg:w-[1024px] m-auto mt-28 px-8 lg:px-0">
       <div className="text-3xl text-white mb-3 font-semibold"><span className="text-purple-400">/</span>contacts</div>
       <div className="text-base text-white mb-11">Who am i?</div>
       <div className="flex flex-wrap justify-between">
-        <div className="font-medium text-gray-400 leading-6 w-[500px]">I’m interested in different opportunities. However, if you have other request or question, don’t hesitate to contact me</div>
-        <div className="flex gap-3">
-          {/* <div className="p-4 border-gray-400 border">
-            <div className="font-medium text-white mb-2">Support me here</div>
-            <div className="text-gray-400">4149500120690030</div>
-          </div> */}
-          <div className="p-4 border-gray-400 border">
-            <div className="font-medium text-white mb-2">Message me here</div>
-            <div className="text-gray-400 flex items-center gap-3 text-base"><BsDiscord /> shizokura</div>
-            <div className="text-gray-400 flex items-center gap-3 text-base"><MdEmail /> edwardguevarra2003@gmail.com</div>
-          </div>
+        <div className="font-medium text-gray-400 leading-6 w-full lg:w-[500px]">I’m interested in different opportunities. However, if you have other request or question, don’t hesitate to contact me</div>
+        <div className="p-4 border-gray-400 border mt-5 lg:mt-0 w-full lg:w-auto">
+          <div className="font-medium text-white mb-2">Message me here</div>
+          <div className="text-gray-400 flex items-center gap-3 text-base"><BsDiscord /> shizokura</div>
+          <div className="text-gray-400 flex items-center gap-3 text-base"><MdEmail /> edwardguevarra2003@gmail.com</div>
         </div>
       </div>
       <div className="mt-14 mb-20">

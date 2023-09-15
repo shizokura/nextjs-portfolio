@@ -50,8 +50,8 @@ const HomePage = () => {
                   <div className="text-white text-2xl font-medium">{project.title}</div>
                   <div className="text-gray-400 text-base">{project.description}</div>
                   <div className="flex gap-4">
-                    <Link href={project.link} target="_blank" className="py-2 px-4 text-base font-medium text-white border border-purple-400 cursor-pointer hover:bg-purple-400 hover:bg-opacity-25">{ 'Demo <~>' }</Link>
-                    <Link href={project.code} target="_blank" className="py-2 px-4 text-base font-medium text-gray-400 border border-gray-400 cursor-pointer hover:bg-gray-400 hover:bg-opacity-25">{ 'Source Code >=' }</Link>
+                    <Link href={project.link} target="_blank" className="text-center py-2 px-4 text-base font-medium text-white border border-purple-400 cursor-pointer hover:bg-purple-400 hover:bg-opacity-25">{ 'Demo <~>' }</Link>
+                    <Link href={project.code} target="_blank" className="text-center py-2 px-4 text-base font-medium text-gray-400 border border-gray-400 cursor-pointer hover:bg-gray-400 hover:bg-opacity-25">{ 'Source Code >=' }</Link>
                   </div>
                 </div>
               </div>
@@ -133,7 +133,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="mt-6 mb-6 text-gray-400 text-base leading-7">
-          <p className="mb-6">I&apos;m Edward Guevarra, a seasoned full-stack web developer with nearly a decade of experience in the field. I&apos;ve had the privilege of working on a wide range of web projects. My expertise encompasses both front-end and back-end development, and I specialize in creating robust, user-friendly web applications.</p>
+          <p className="mb-6">I&apos;m <span className="text-white">Edward Guevarra</span>, a seasoned full-stack web developer with nearly a decade of experience in the field. I&apos;ve had the privilege of working on a wide range of web projects. My expertise encompasses both front-end and back-end development, and I specialize in creating robust, user-friendly web applications.</p>
           <p className="mb-6">Throughout my career, I&apos;ve honed my skills and kept up with the ever-evolving web technologies and frameworks. I&apos;m passionate about translating creative ideas into functional websites and applications that not only meet but exceed my clients&apos; expectations.</p>
           <p className="mb-6">I look forward to discussing how I can contribute to your web development needs and create impactful online experiences.</p>
         </div>
