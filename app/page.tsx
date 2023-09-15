@@ -106,8 +106,6 @@ const HomePage = () => {
                   <div>Git</div>
                   <div>Node.js</div>
                   <div>Vite</div>
-                  <div>Vitest</div>
-                  <div>Playwright</div>
                 </div>
               </div>
               <div className="w-44 border-gray-400 border">

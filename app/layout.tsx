@@ -5,17 +5,11 @@ import { AiFillGithub } from 'react-icons/ai';
 import { BsDiscord } from "react-icons/bs";
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
-import { Metadata } from 'next';
 
 const firacode = Fira_Code({ 
   subsets: ['latin'],
   weight: [ '300', '400', '500', '600', '700' ]
 });
-
-export const metadata: Metadata = {
-  title: 'shizo.DEV',
-  description: 'Fullstack Web Developer'
-};
 
 export default function RootLayout({
   children
@@ -44,6 +38,14 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <title>shizo.DEV</title>
+        <meta charSet="UTF-8" />
+        <meta name="description" content="a fullstack web developer" />
+        <meta name="keywords" content="PHP, Typescript, Javascript, MongoDB, Firestore, PostgreSQL, HTML, CSS, SCSS, Tailwind, VSCode, Git, Node.js, Vite, React, Vue, Angular, Laravel, Next.js, Capacitor, Electron, Quasar" />
+        <meta name="author" content="Edward Guevarra" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body className={`${firacode.className} bg-background`}>
         <header className="flex justify-between w-[1024px] m-auto h-20 items-center fixed top-0 left-0 right-0 bg-background z-10">
           <div className="text-white text-base font-bold">shizo.<span className="text-purple-400">DEV</span></div>
