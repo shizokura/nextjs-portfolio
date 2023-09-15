@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsTwitter, BsDiscord, BsSteam } from 'react-icons/bs';
+import { BsTwitter, BsDiscord, BsSteam, BsYoutube } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import Link from 'next/link';
 import { SiMyanimelist } from 'react-icons/si';
@@ -40,6 +40,10 @@ const ContactPage = () => {
           </Link>
           <Link href="https://discord.com/users/204564936729427968" target="_blank" className="flex gap-2 items-center cursor-pointer">
             <BsDiscord className="text-gray-400 w-5 h-5" />
+            <div className="text-gray-400">shizokura</div>
+          </Link>
+          <Link href="https://www.youtube.com/channel/UCwtCrCJHx0RjTpIUVGC3LoQ" target="_blank" className="flex gap-2 items-center cursor-pointer">
+            <BsYoutube className="text-gray-400 w-5 h-5" />
             <div className="text-gray-400">shizokura</div>
           </Link>
         </div>

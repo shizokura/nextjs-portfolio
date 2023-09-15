@@ -8,8 +8,8 @@ import projects from "./refs/ref_projects";
 const HomePage = () => {
   return (
     <>
-      <div className="w-[1024px] h-screen m-auto text-center flex items-center justify-center relative">
-        <div>
+      <div className="lg:w-[1024px] h-screen m-auto text-center flex items-center justify-center relative">
+        <div className="px-6">
           <svg className="mb-10 mr-auto ml-auto" width="156" height="156" viewBox="0 0 156 156" fill="none" xmlns="http://www.w3.org/2000/svg">
             <mask id="path-1-inside-1_64_1298" fill="white">
               <path fillRule="evenodd" clipRule="evenodd" d="M0 39.75H38.75H77.5V78.5H38.75V117.25H77.5V156H38.75H0V117.25V78.5V39.75Z"/>
@@ -28,19 +28,19 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="w-[1024px] m-auto mt-20">
-        <div className="flex justify-between items-center mb-12">
-          <div className="flex gap-4 items-center">
+      <div className="lg:w-[1024px] m-auto mt-20 px-8 lg:px-0">
+        <div className="md:flex md:justify-between md:items-center mb-12">
+          <div className="flex gap-4 items-center justify-center md:justify-start">
             <div className="text-3xl text-white font-medium"><span className="text-purple-400">#</span>projects</div>
-            <div className="bg-purple-400 h-px w-96"></div>
+            <div className="bg-purple-400 h-px w-96 hidden md:block"></div>
           </div>
-          <Link href="/works" className="text-white text-base font-medium cursor-pointer">{ 'View all ~~>' }</Link>
+          <Link href="/works" className="text-white text-base font-medium cursor-pointer block text-center mt-4">{ 'View all ~~>' }</Link>
         </div>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map(project => {
             return (
               <div key={project.id} className="border-gray-400 border">
-                <Image className="w-full h-auto" src={project.image} width={330} height={200} alt="placeholder" />
+                <Image className="w-full h-auto" src={project.image} width={830} height={700} alt="placeholder" />
                 <div className="text-gray-400 p-2 flex gap-2 items-center border-gray-400 border-t border-b flex-wrap">
                   {project.stack.map(text => {
                     return <div key={text} className="text-base">{text}</div>
@@ -59,18 +59,18 @@ const HomePage = () => {
           })}
         </div>
       </div>
-      <div className="w-[1024px] m-auto mt-28">
-        <div className="flex justify-between items-center mb-12">
-          <div className="flex gap-4 items-center">
+      <div className="lg:w-[1024px] m-auto mt-28 px-8 lg:px-0">
+        <div className="md:flex md:justify-between md:items-center mb-12">
+          <div className="flex gap-4 items-center justify-center md:justify-start">
             <div className="text-3xl text-white font-medium"><span className="text-purple-400">#</span>skills</div>
-            <div className="bg-purple-400 h-px w-96"></div>
+            <div className="bg-purple-400 h-px w-96 hidden md:block"></div>
           </div>
         </div>
-        <div className="flex justify-between items-center flex-wrap gap-14">
+        <div className="flex justify-center lg:justify-between items-center flex-wrap gap-14">
           <Image className="w-[349px] h-[282px]" src="/skills.png" alt="skills" width={349} height={282} />
-          <div className="flex flex-wrap gap-4 justify-end w-[584px]">
-            <div className="flex flex-col gap-4">
-              <div className="w-44 border-gray-400 border">
+          <div className="flex flex-wrap gap-4 justify-center lg:justify-end max-w-[584px]">
+            <div className="flex flex-wrap justify-center lg:justify-normal lg:flex-col gap-4 w-full sm:w-max">
+              <div className="sm:w-44 border-gray-400 border w-full">
                 <div className="p-2 text-white font-base font-semibold border-gray-400 border-b">Languages</div>
                 <div className="p-2 flex gap-2 flex-wrap text-gray-400">
                   <div>PHP</div>
@@ -79,8 +79,8 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col gap-4">
-              <div className="w-44 border-gray-400 border">
+            <div className="flex flex-wrap justify-center lg:justify-normal lg:flex-col gap-4 w-full sm:w-max">
+              <div className="sm:w-44 border-gray-400 border w-full">
                 <div className="p-2 text-white font-base font-semibold border-gray-400 border-b">Databases</div>
                 <div className="p-2 flex gap-2 flex-wrap text-gray-400">
                   <div>MongoDB</div>
@@ -88,7 +88,7 @@ const HomePage = () => {
                   <div>PostgreSQL</div>
                 </div>
               </div>
-              <div className="w-44 border-gray-400 border">
+              <div className="sm:w-44 border-gray-400 border w-full">
                 <div className="p-2 text-white font-base font-semibold border-gray-400 border-b">Other</div>
                 <div className="p-2 flex gap-2 flex-wrap text-gray-400">
                   <div>HTML</div>
@@ -98,8 +98,8 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col gap-4">
-              <div className="w-44 border-gray-400 border">
+            <div className="flex flex-wrap justify-center lg:justify-normal lg:flex-col gap-4 w-full sm:w-max">
+              <div className="sm:w-44 border-gray-400 border w-full">
                 <div className="p-2 text-white font-base font-semibold border-gray-400 border-b">Tools</div>
                 <div className="p-2 flex gap-2 flex-wrap text-gray-400">
                   <div>VSCode</div>
@@ -108,7 +108,7 @@ const HomePage = () => {
                   <div>Vite</div>
                 </div>
               </div>
-              <div className="w-44 border-gray-400 border">
+              <div className="sm:w-44 border-gray-400 border w-full">
                 <div className="p-2 text-white font-base font-semibold border-gray-400 border-b">Frameworks</div>
                 <div className="p-2 flex gap-2 flex-wrap text-gray-400">
                   <div>React</div>
@@ -125,11 +125,11 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="w-[1024px] m-auto mt-28">
-        <div className="flex justify-between items-center">
-          <div className="flex gap-4 items-center">
+      <div className="lg:w-[1024px] m-auto mt-28 px-8 lg:px-0">
+        <div className="md:flex md:justify-between md:items-center">
+          <div className="flex gap-4 items-center justify-center md:justify-start">
             <div className="text-3xl text-white font-medium"><span className="text-purple-400">#</span>about-me</div>
-            <div className="bg-purple-400 h-px w-96"></div>
+            <div className="bg-purple-400 h-px w-96 hidden md:block"></div>
           </div>
         </div>
         <div className="mt-6 mb-6 text-gray-400 text-base leading-7">
@@ -139,20 +139,20 @@ const HomePage = () => {
         </div>
         <Link href="/about" className="py-2 px-4 border-purple-400 border text-white text-base font-medium cursor-pointer">{ 'Read More ->' }</Link>
       </div>
-      <div className="w-[1024px] m-auto mt-28 mb-36">
-        <div className="flex justify-between items-center">
-          <div className="flex gap-4 items-center">
+      <div className="lg:w-[1024px] m-auto mt-28 mb-36 px-8 lg:px-0">
+        <div className="md:flex md:justify-between md:items-center mb-12">
+          <div className="flex gap-4 items-center justify-center md:justify-start">
             <div className="text-3xl text-white font-medium"><span className="text-purple-400">#</span>contacts</div>
-            <div className="bg-purple-400 h-px w-96"></div>
+            <div className="bg-purple-400 h-px w-96 hidden md:block"></div>
           </div>
         </div>
-        <div className="flex justify-between items-start">
-          <div className="mt-6 mb-6 text-gray-400 text-base w-1/2 leading-7">I’m interested in different opportunities. However, if you have other request or question, don’t hesitate to contact me</div>
-          <div className="p-4 border-gray-400 border w-max">
+        <div className="sm:flex sm:justify-between sm:items-start gap-3">
+          <div className="text-center sm:text-left mt-6 mb-6 text-gray-400 text-base sm:w-1/2 leading-7">I’m interested in different opportunities. However, if you have other request or question, don’t hesitate to contact me</div>
+          <div className="p-4 border-gray-400 border w-full sm:w-max">
             <div className="text-white text-base font-bold mb-4">Message me here</div>
             <div className="flex flex-col gap-2">
-              <div className="text-gray-400 flex items-center gap-3 text-base"><BsDiscord /> shizokura</div>
-              <div className="text-gray-400 flex items-center gap-3 text-base"><MdEmail /> edwardguevarra2003@gmail.com</div>
+              <div className="text-gray-400 flex items-center gap-3 text-base"><BsDiscord className="shrink-0" /> shizokura</div>
+              <div className="text-gray-400 flex items-center gap-3 text-base text-ellipsis break-all"><MdEmail className="shrink-0" /> edwardguevarra2003@gmail.com</div>
             </div>
           </div>
         </div>
