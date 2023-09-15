@@ -5,15 +5,16 @@ import { AiFillGithub } from 'react-icons/ai';
 import { BsDiscord } from "react-icons/bs";
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
+import { Metadata } from 'next';
 
 const firacode = Fira_Code({ 
   subsets: ['latin'],
   weight: [ '300', '400', '500', '600', '700' ]
 });
 
-export const metadata = {
-  title: 'Web DEV Portfolio',
-  description: 'Fullstack Web Developer',
+export const metadata: Metadata = {
+  title: 'shizo.DEV',
+  description: 'Fullstack Web Developer'
 };
 
 export default function RootLayout({
