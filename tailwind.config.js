@@ -1,4 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+import colors, { warmGray } from 'tailwindcss/colors';
+
+delete colors.lightBlue;
+delete colors.warmGray;
+delete colors.coolGray;
+delete colors.blueGray;
+delete colors.trueGray;
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -13,6 +21,10 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    colors: {
+      ...colors,
+      'background': '#282C33'
+    }
   },
   plugins: [],
 }
