@@ -14,65 +14,75 @@ const AboutPage = () => {
       <div className="mt-16">
         <div className="text-white text-3xl font-medium mb-12"><span className="text-purple-400">#</span>skills</div>
         <div className="flex flex-wrap gap-4 w-full">
-          <div className="w-44 border-gray-400 border">
-            <div className="p-2 text-white font-base font-semibold border-gray-400 border-b">Languages</div>
-            <div className="p-2 flex gap-2 flex-wrap text-gray-400">
+          <div>
+            <div className="w-44 border-gray-400 border">
+              <div className="p-2 text-white font-base font-semibold border-gray-400 border-b">Languages</div>
+              <div className="p-2 text-gray-400">
+              <div>PHP</div>
               <div>Typescript</div>
-              <div>Lua</div>
-              <div>Python</div>
               <div>Javascript</div>
+              </div>
             </div>
           </div>
-          <div className="w-44 border-gray-400 border">
-            <div className="p-2 text-white font-base font-semibold border-gray-400 border-b">Databases</div>
-            <div className="p-2 flex gap-2 flex-wrap text-gray-400">
-              <div>SQLite</div>
-              <div>PostgreSQL</div>
-              <div>Mongo</div>
+          <div>
+            <div className="w-44 border-gray-400 border">
+              <div className="p-2 text-white font-base font-semibold border-gray-400 border-b">Databases</div>
+              <div className="p-2 text-gray-400">
+                <div>MongoDB</div>
+                <div>Firestore</div>
+                <div>PostgreSQL</div>
+              </div>
             </div>
           </div>
-          <div className="w-44 border-gray-400 border">
-            <div className="p-2 text-white font-base font-semibold border-gray-400 border-b">Other</div>
-            <div className="p-2 flex gap-2 flex-wrap text-gray-400">
-              <div>HTML</div>
-              <div>CSS</div>
-              <div>EJS</div>
-              <div>SCSS</div>
-              <div>REST</div>
-              <div>Jinja</div>
+          <div>
+            <div className="w-44 border-gray-400 border">
+              <div className="p-2 text-white font-base font-semibold border-gray-400 border-b">Other</div>
+              <div className="p-2 text-gray-400">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>SCSS</div>
+                <div>Tailwind</div>
+              </div>
             </div>
           </div>
-          <div className="w-44 border-gray-400 border">
-            <div className="p-2 text-white font-base font-semibold border-gray-400 border-b">Tools</div>
-            <div className="p-2 flex gap-2 flex-wrap text-gray-400">
-              <div>VSCode</div>
-              <div>Neovim</div>
-              <div>Figma</div>
-              <div>XFCE</div>
-              <div>Git</div>
-              <div>Font Awesome</div>
+          <div>
+            <div className="w-44 border-gray-400 border">
+              <div className="p-2 text-white font-base font-semibold border-gray-400 border-b">Tools</div>
+              <div className="p-2 text-gray-400">
+                <div>VSCode</div>
+                <div>Git</div>
+                <div>Node.js</div>
+                <div>Vite</div>
+              </div>
             </div>
           </div>
-          <div className="w-44 border-gray-400 border">
-            <div className="p-2 text-white font-base font-semibold border-gray-400 border-b">Frameworks</div>
-            <div className="p-2 flex gap-2 flex-wrap text-gray-400">
-              <div>React</div>
-              <div>Vue</div>
+          <div>
+            <div className="w-44 border-gray-400 border">
+              <div className="p-2 text-white font-base font-semibold border-gray-400 border-b">Frameworks</div>
+              <div className="p-2 text-gray-400">
+                <div>React</div>
+                <div>Vue</div>
+                <div>Angular</div>
+                <div>Laravel</div>
+                <div>Next.js</div>
+                <div>Capacitor</div>
+                <div>Electron</div>
+                <div>Quasar</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div className="mt-16 mb-40">
-        <div className="text-white text-3xl font-medium mb-12"><span className="text-purple-400">#</span>my-fun-facts</div>
+        <div className="text-white text-3xl font-medium mb-12"><span className="text-purple-400">#</span>hobbies</div>
         <div className="flex justify-between items-start">
           <div className="flex gap-4 flex-wrap">
-            <div className="text-gray-400 border-gray-400 border p-2">I like winter more than summer</div>
-            <div className="text-gray-400 border-gray-400 border p-2">I often bike with my friends</div>
-            <div className="text-gray-400 border-gray-400 border p-2">I like <span>pizza</span> and <span>pasta</span></div>
-            <div className="text-gray-400 border-gray-400 border p-2">I was in <span>Egypt</span>, <span>Poland</span> and <span>Turkey</span></div>
-            <div className="text-gray-400 border-gray-400 border p-2">My favorite movie is <span>The Green Mile</span></div>
-            <div className="text-gray-400 border-gray-400 border p-2">I am still in school</div>
-            <div className="text-gray-400 border-gray-400 border p-2">I don&apos;t have any siblings</div>
+            <div className="text-gray-400 border-gray-400 border p-2">playing <span className="text-white">games</span></div>
+            <div className="text-gray-400 border-gray-400 border p-2">learning to play <span className="text-white">piano</span></div>
+            <div className="text-gray-400 border-gray-400 border p-2">watching <span className="text-white">vtubers</span></div>
+            <div className="text-gray-400 border-gray-400 border p-2">riding <span className="text-white">motorcycle</span></div>
+            <div className="text-gray-400 border-gray-400 border p-2">watching <span className="text-white">anime</span></div>
+            <div className="text-gray-400 border-gray-400 border p-2">reading <span className="text-white">manga</span></div>
           </div>
           <Image className="w-[178px] h-[169px]" src="/facts.png" alt="skills" width={178} height={169} />
         </div>

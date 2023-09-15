@@ -8,7 +8,7 @@ const WorksPage = () => {
     <div className="w-[1024px] m-auto mt-28">
       <div className="text-3xl text-white mb-3 font-semibold"><span className="text-purple-400">/</span>projects</div>
       <div className="text-base text-white">List of my projects</div>
-      <div className="mt-16 text-white text-3xl font-medium mb-12"><span className="text-purple-400">#</span>complete-apps</div>
+      <div className="mt-16 text-white text-3xl font-medium mb-12"><span className="text-purple-400">#</span>websites</div>
       <div className="grid grid-cols-3 gap-4">
       {projects.map(project => {
         return (
@@ -31,7 +31,7 @@ const WorksPage = () => {
         )
       })}
       </div>
-      <div className="mt-16 text-white text-3xl font-medium mb-12"><span className="text-purple-400">#</span>small-projects</div>
+      {/* <div className="mt-16 text-white text-3xl font-medium mb-12"><span className="text-purple-400">#</span>small-projects</div>
       <div className="grid grid-cols-3 gap-4 mb-48">
         <div className="border-gray-400 border">
           <div className="text-gray-400 p-2 flex gap-2 items-center border-gray-400 border-t border-b">
@@ -49,7 +49,7 @@ const WorksPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
