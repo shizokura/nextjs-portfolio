@@ -98,8 +98,8 @@ export default function RootLayout({
             <div className="flex flex-col gap-3 mt-8 sm:mt-0">
               <div className="text-white text-2xl font-medium">Media</div>
               <div className="flex gap-5 items-center justify-center sm:justify-normal">
-                <AiFillGithub className="w-6 h-6 text-gray-400" />
-                <BsDiscord className="w-6 h-6 text-gray-400" />
+                <Link href="https://github.com/shizokura" target='_blank'><AiFillGithub className="w-6 h-6 text-gray-400" /></Link>
+                <Link href="https://discord.com/users/204564936729427968" target='_blank'><BsDiscord className="w-6 h-6 text-gray-400" /></Link>
               </div>
             </div>
           </div>

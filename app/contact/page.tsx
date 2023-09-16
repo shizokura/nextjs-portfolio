@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsTwitter, BsDiscord, BsSteam, BsYoutube } from 'react-icons/bs';
+import { BsTwitter, BsDiscord, BsSteam, BsYoutube, BsGithub } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import Link from 'next/link';
 import { SiMyanimelist } from 'react-icons/si';
@@ -23,6 +23,10 @@ const ContactPage = () => {
           <Link href="https://twitter.com/shizokura" target="_blank" className="flex gap-2 items-center cursor-pointer">
             <BsTwitter className="text-gray-400 w-5 h-5" />
             <div className="text-gray-400">@shizokura</div>
+          </Link>
+          <Link href="https://github.com/shizokura" target="_blank" className="flex gap-2 items-center cursor-pointer">
+            <BsGithub className="text-gray-400 w-5 h-5" />
+            <div className="text-gray-400">shizokura</div>
           </Link>
           <Link href="https://steamcommunity.com/profiles/76561198810018796" target="_blank" className="flex gap-2 items-center cursor-pointer">
             <BsSteam className="text-gray-400 w-5 h-5" />
