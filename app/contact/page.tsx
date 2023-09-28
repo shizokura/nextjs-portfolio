@@ -3,6 +3,7 @@ import { BsTwitter, BsDiscord, BsSteam, BsYoutube, BsGithub } from 'react-icons/
 import { MdEmail } from 'react-icons/md';
 import Link from 'next/link';
 import { SiMyanimelist } from 'react-icons/si';
+import { AiFillLinkedin } from 'react-icons/ai';
 
 const ContactPage = () => {
   return (
@@ -43,6 +44,10 @@ const ContactPage = () => {
           <Link href="https://www.youtube.com/channel/UCwtCrCJHx0RjTpIUVGC3LoQ" target="_blank" className="flex gap-2 items-center cursor-pointer">
             <BsYoutube className="text-gray-400 w-5 h-5" />
             <div className="text-gray-400">shizokura</div>
+          </Link>
+          <Link href="https://www.linkedin.com/in/edwardguevarra" target="_blank" className="flex gap-2 items-center cursor-pointer">
+            <AiFillLinkedin className="text-gray-400 w-5 h-5" />
+            <div className="text-gray-400">edwardguevarra</div>
           </Link>
         </div>
       </div>

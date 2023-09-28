@@ -83,6 +83,8 @@ const AboutPage = () => {
             <div className="text-gray-400 border-gray-400 border p-2">riding <span className="text-white">motorcycle</span></div>
             <div className="text-gray-400 border-gray-400 border p-2">watching <span className="text-white">anime</span></div>
             <div className="text-gray-400 border-gray-400 border p-2">reading <span className="text-white">manga</span></div>
+            <div className="text-gray-400 border-gray-400 border p-2">listening <span className="text-white">vocaloid songs</span></div>
+            <div className="text-gray-400 border-gray-400 border p-2">learning <span className="text-white">japanese</span></div>
           </div>
           <Image className="w-[178px] h-[169px] m-auto" src="/facts.png" alt="skills" width={178} height={169} />
         </div>
